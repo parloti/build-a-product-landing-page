@@ -4,16 +4,69 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
 		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
+	<style>
+		@media (min-width: 992px) {
+			body {
+				padding-top: 56px;
+			}
+		}
+    @media (max-width: 991px) {
+			body {
+				padding-top: 136px;
+			}
+		}
+    @media (max-width: 216px) {
+			body {
+				padding-top: 176px;
+			}
+		}
+	</style>
 </head>
 
 <body>
+	<header id="header">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="nav-bar">
+			<a class="navbar-brand" href="#">
+				<img id="header-img" width="30px" height="30px" src="https://github.com/parloti/build-a-product-landing-page/blob/master/icon_large[1].png?raw=true" class="rounded d-inline-block align-top" >Home</a>
+				<div>
+					<ul class="navbar-nav">
+						<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+						<li class="nav-item"><a class="nav-link" href="#course">Course</a></li>
+						<li class="nav-item"><a class="nav-link" href="#subscribe">Subscribe</a></li>
+					</ul>
+				</div>
+		</nav>
+		<div class="text-center">
+			<h1 class="text-primary">Product Landing Page</h1>
+		</div>
+	</header>
 	<div class="jumbotron jumbotron-fluid">
 		<div class="container">
-			<img src="https://github.com/parloti/build-a-product-landing-page/blob/master/icon_large[1].png?raw=true" class="img-fluid" >
+			<main>
+				<section id="about">
+					<h3>What is freeCodeCamp?</h3>
+					<p>We’re a nonprofit community that helps you learn to code by building projects.</p>
+				</section>
+				<section id="course">
+					<iframe id="video" width="560" height="315"
+						src="https://www.youtube.com/embed/pN92rnO_n5U"></iframe>
+				</section>
+				<section id="subscribe">
+					<form id="form" action="https://www.freecodecamp.com/email-submit">
+						<div class="form-group">
+							<label>Email address
+						<input name="email" id="email" placeholder="Subscribe to news" type="email" class="form-control">
+            </label>
+							<small class="form-text text-muted">We'll never share your email with anyone else.</small>
+						</div>
 
+						<input id="submit" type="submit" class="btn btn-lg btn-primary" />
+					</form>
+			</main>
 			<footer class="text-center">
 				<hr>
-				<p>Written and coded by <a href="https://www.freecodecamp.com/parloti" target="_blank">Alex Parloti</a>.
+				<p>Written and coded by <a href="https://www.freecodecamp.com/parloti" target="_blank">Alex
+						Parloti</a>.
 				</p>
 			</footer>
 
